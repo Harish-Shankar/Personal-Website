@@ -1,0 +1,268 @@
+:root {
+    color-scheme: light dark;
+    /* both supported */
+  }
+  
+  body {
+    font-family: "Source Code Pro", monospace;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: center;
+  }
+  body a {
+    text-decoration: none;
+  }
+  
+  .icon {
+    background: url("vsco.svg");
+    height: 24px;
+    width: 24px;
+  }
+  
+  .light {
+    background-color: #fcf0e2;
+    color: #073642;
+  }
+  .light * {
+    color: #073642;
+  }
+  .light h1 {
+    color: #52154E;
+  }
+  .light h2, .light h3, .light h4, .light h5, .light h6 {
+    color: #586e75;
+    border-color: #657b83;
+  }
+  .light .bio .exp {
+    background: #eee8d5;
+  }
+  .light .job .left:before {
+    background: #FF8960;
+  }
+  .light .event .left:before {
+    background: #FF8960;
+  }
+  .light .fun .left:before {
+    background: #FF8960;
+  }
+  .light a, .light a:active, .light a:visited, .light code.url {
+    color: #52154E;
+  }
+  .light .flash {
+    color: #52154E !important;
+  }
+  .light .feather {
+    stroke: #52154E;
+  }
+  
+  .dark {
+    background-color: #495159;
+    color: #eee8d5;
+  }
+  .dark * {
+    color: #eee8d5;
+  }
+  .dark h1 {
+    color: #A1E8CC;
+  }
+  .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+    color: #E5D4C0;
+    border-color: #839496;
+  }
+  .dark .bio .exp {
+    background: #24282C;
+  }
+  .dark .job .left:before {
+    background: #F3944C;
+  }
+  .dark .event .left:before {
+    background: #F3944C;
+  }
+  .dark .fun .left:before {
+    background: #F3944C;
+  }
+  .dark a, .dark a:active, .dark a:visited, .dark code.url {
+    color: #A1E8CC;
+  }
+  .dark .flash {
+    color: #A1E8CC !important;
+  }
+  .dark .feather {
+    stroke: #A1E8CC;
+  }
+  
+  .container {
+    max-width: 840px;
+  }
+  
+  h1 {
+    font-weight: 400;
+    margin: 0;
+  }
+  
+  h2 {
+    font-size: medium;
+    font-weight: 300;
+    margin: 0 0 0.5em 0;
+  }
+  
+  .links {
+    margin: 0 0 1.5em 0;
+  }
+  .links a {
+    margin: auto 1em auto 0;
+  }
+  
+  .intro {
+    margin: 0 0 2em 0;
+  }
+  .intro .title {
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 0.8em 0;
+  }
+  .intro .title:before {
+    content: "[+] ";
+  }
+  .intro .exp {
+    display: none;
+  }
+  .intro ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .intro ul li {
+    margin: 2em 0;
+  }
+  
+  .changelog {
+    margin: 0 0 2em 0;
+  }
+  .changelog .title {
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 0.8em 0;
+  }
+  .changelog .title:before {
+    content: "[+] ";
+  }
+  .changelog .exp {
+    display: none;
+  }
+  .changelog ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .changelog ul li {
+    margin: 2em 0;
+  }
+  .changelog li {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .changelog li .left {
+    font-weight: 300;
+    min-width: 18em;
+  }
+  .changelog li .desc {
+    display: flex;
+    flex-direction: column;
+  }
+  .changelog li .desc .info {
+    visibility: hidden;
+    max-height: 0;
+    transition: visibility 0s, max-height 0.5s linear;
+  }
+  .changelog li .desc .desc-points li {
+    margin-top: 0;
+  }
+  .changelog li .desc p {
+    margin: 0;
+  }
+  .changelog li .desc:hover .info {
+    visibility: visible;
+    max-height: 100px;
+    transition: max-height 0.5s linear;
+  }
+  .changelog li .left:before {
+    content: "";
+    display: inline-block;
+    width: 0.7em;
+    height: 0.7em;
+    border-radius: 100%;
+    margin: 0 2em 0 0;
+  }
+  .changelog .loading {
+    animation: blinker 1s linear infinite;
+    margin: 1em 0 0 0;
+  }
+  .changelog .loading .hide {
+    display: none;
+  }
+  
+  .bio {
+    margin: 0 0 2em 0;
+  }
+  .bio .title {
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 0.8em 0;
+  }
+  .bio .title:before {
+    content: "[+] ";
+  }
+  .bio .exp {
+    display: none;
+  }
+  .bio ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .bio ul li {
+    margin: 2em 0;
+  }
+  .bio .exp {
+    line-height: 1.8em;
+    margin: 2em 0 0 0;
+    padding: 0.8em 1.2em;
+  }
+  
+  .expand .title {
+    cursor: pointer;
+  }
+  .expand .title:before {
+    content: "[-] ";
+  }
+  .expand .exp {
+    display: block;
+  }
+  
+  .feather {
+    width: 24px;
+    height: 24px;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+  @media (max-width: 600px) {
+    .changelog li .left {
+      min-width: 160px;
+    }
+  
+    .links a {
+      margin: auto 1.5em auto 0;
+    }
+  }
+  
+  /*# sourceMappingURL=styles.css.map */
+  
