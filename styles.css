@@ -20,7 +20,7 @@
   }
   
   .light {
-    background-color: #fcf0e2;
+    background-color: #fae5cd;
     color: #073642;
   }
   .light * {
@@ -34,6 +34,9 @@
     border-color: #657b83;
   }
   .light .bio .exp {
+    background: #eee8d5;
+  }
+  .light .changelog .exp {
     background: #eee8d5;
   }
   .light .job .left:before {
@@ -70,6 +73,9 @@
     border-color: #839496;
   }
   .dark .bio .exp {
+    background: #24282C;
+  }
+  .dark .changelog .exp {
     background: #24282C;
   }
   .dark .job .left:before {
@@ -161,9 +167,11 @@
   .changelog li {
     display: flex;
     justify-content: flex-start;
+    line-height: 1.8em;
+    padding: 0.4em 0.8em;
   }
   .changelog li .left {
-    font-weight: 300;
+    font-weight: 500;
     min-width: 18em;
   }
   .changelog li .desc {

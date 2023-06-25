@@ -8,9 +8,9 @@ function expandGroups(event) {
       event,
       function () {
         el.parentElement.classList.toggle("expand");
-        if (el.classList.contains("flash")) {
-          el.classList.remove("flash");
-        }
+        // if (el.classList.contains("flash")) {
+        //   el.classList.remove("flash");
+        // }
       },
       false
     );
