@@ -19,59 +19,13 @@ body a {
   width: 24px;
 }
 
-.light {
-  background-color: #fae5cd;
-  color: #073642;
-}
-.light * {
-  color: #073642;
-}
-.light h1 {
-  color: #52154e;
-}
-.light h2,
-.light h3,
-.light h4,
-.light h5,
-.light h6 {
-  color: #586e75;
-  border-color: #657b83;
-}
-.light .bio .exp {
-  background: #eee8d5;
-}
-.light .changelog .exp {
-  background: #eee8d5;
-}
-.light .job .left:before {
-  background: #009177;
-}
-.light .event .left:before {
-  background: #009177;
-}
-.light .fun .left:before {
-  background: #009177;
-}
-.light a,
-.light a:active,
-.light a:visited,
-.light code.url {
-  color: #52154e;
-}
-.light .flash {
-  color: #52154e !important;
-}
-.light .feather {
-  stroke: #52154e;
-}
-
 .dark {
   background-color: #495159;
   color: #eee8d5;
 }
-.dark * {
+/* .dark * {
   color: #eee8d5;
-}
+} */
 .dark h1 {
   color: #a1e8cc;
 }
@@ -102,13 +56,16 @@ body a {
 .dark a:active,
 .dark a:visited,
 .dark code.url {
-  color: #a1e8cc;
+  color: #9ce185;
 }
 .dark .flash {
   color: #a1e8cc !important;
 }
 .dark .feather {
   stroke: #a1e8cc;
+}
+.dark .mode-selector {
+  color: #a1e8cc;
 }
 
 .container {
