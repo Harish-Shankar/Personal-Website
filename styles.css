@@ -101,6 +101,10 @@ blockquote {
   margin-bottom: 0.1rem;
 }
 
+.current {
+  color: var(--tertiary);
+}
+
 .coursework {
   display: flex;
   justify-content: space-between;
