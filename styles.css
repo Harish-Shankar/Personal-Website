@@ -5,6 +5,8 @@
   --secondary: #D8AA9B;
   --tertiary: #5692C1;
   --accent: #009178;
+  --current-grad: #843967;
+  --taken-grad: #315BAF;
 }
 
 html, body {
@@ -76,7 +78,7 @@ blockquote {
 
 .content {
   text-align: left;
-  padding: 41px;
+  padding: 25px 41px 41px 41px;
   background-color: var(--background);
   position: relative;
   overflow: hidden;
@@ -105,6 +107,22 @@ blockquote {
   color: var(--tertiary);
 }
 
+.current-undergrad {
+  color: var(--tertiary);
+}
+
+.current-grad {
+  color: var(--current-grad);
+}
+
+.taken-undergrad {
+  color: var(--text);
+}
+
+.taken-grad {
+  color: var(--taken-grad);
+}
+
 .coursework {
   display: flex;
   justify-content: space-between;
@@ -118,4 +136,81 @@ blockquote {
 
 .semester:last-child {
   margin-right: 0;
+}
+
+/* Color Legend Styles */
+.color-legend {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--background);
+  border: 2px solid var(--secondary);
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  min-width: 200px;
+}
+
+.color-legend h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: var(--primary);
+  text-align: center;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.legend-item:last-child {
+  margin-bottom: 0;
+}
+
+.color-square {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  flex-shrink: 0;
+}
+
+.current-undergrad-color {
+  background-color: var(--tertiary);
+}
+
+.current-grad-color {
+  background-color: var(--current-grad);
+}
+
+.taken-undergrad-color {
+  background-color: var(--text);
+}
+
+.taken-grad-color {
+  background-color: var(--taken-grad);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .color-legend {
+    bottom: 10px;
+    right: 10px;
+    padding: 12px;
+    min-width: 180px;
+  }
+  
+  .legend-item {
+    font-size: 0.8rem;
+  }
+  
+  .color-square {
+    width: 14px;
+    height: 14px;
+  }
 }
