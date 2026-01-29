@@ -82,7 +82,7 @@ blockquote {
   background-color: var(--background);
   position: relative;
   overflow: hidden;
-  max-width: 50rem;
+  max-width: 60rem;
 }
 
 .container {
@@ -98,9 +98,33 @@ blockquote {
 
 .no-bullet li {
   list-style-type: none;
-  white-space: pre-wrap;
   margin-top: 0.1rem;
   margin-bottom: 0.1rem;
+}
+
+.subheading {
+  font-size: 0.9rem;
+  color: var(--tertiary);
+  margin-top: -0.3rem;
+  margin-bottom: 0.8rem;
+  font-style: italic;
+}
+
+.coursework-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem 2rem;
+}
+
+.course-column h4 {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .coursework-columns {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
 }
 
 .current {
